@@ -1,5 +1,4 @@
-package me;
-
+package helloworld;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,14 +10,11 @@ import java.io.PrintWriter;
 /**
  * Created by yteng on 9/22/15.
  */
-public class Hello extends HttpServlet {
+public class HelloWorldServlet extends HttpServlet {
 
-    public void doGet(HttpServletRequest req,
-                      HttpServletResponse res)
-            throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         PrintWriter out = res.getWriter();
-
-        out.println(new HelloWorld().hello());
+        out.println(new HelloWorld().helloworld());
         out.close();
     }
 }
