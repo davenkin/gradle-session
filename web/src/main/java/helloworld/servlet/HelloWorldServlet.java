@@ -1,7 +1,6 @@
 package helloworld.servlet;
 
 import helloworld.HelloWorld;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
