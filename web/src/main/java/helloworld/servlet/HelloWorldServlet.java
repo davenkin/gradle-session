@@ -18,9 +18,11 @@ public class HelloWorldServlet extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(HelloWorldServlet.class);
 
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        logger.info("-------------");
+        logger.info("Saying Hello from " + this.getClass().toString());
         PrintWriter out = res.getWriter();
-        out.println(new HelloWorld().helloworld());
+        HelloWorld helloWorld = new HelloWorld();
+        helloWorld.setMessage("Lenovo");
+        out.println(helloWorld.helloworld());
         out.close();
     }
 }
