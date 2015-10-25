@@ -23,8 +23,14 @@ public class HelloWorldServlet extends HttpServlet {
         String user = req.getRemoteUser();
         logger.info("Saying Hello from {}.",user);
         helloWorld.setMessage(user);
+        out.println("<!DOCTYPE html>\n" +
+                "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
+                "<body>\n" +
+                "<div><a href=\"logout\">Logout</a></div>\n");
         out.println(helloWorld.helloworld());
+        out.println("</body></html>");
         out.close();
     }
 }
+
 

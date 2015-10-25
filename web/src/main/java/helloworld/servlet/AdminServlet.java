@@ -17,8 +17,13 @@ import java.io.PrintWriter;
 public class AdminServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         PrintWriter out = res.getWriter();
-        out.println("This is the admin page,only admin can see this page.");
+        out.println("<!DOCTYPE html>\n" +
+                "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
+                "<body>\n" +
+                "<div>This is the admin page,only admin can see this page.</div><div><a href=\"logout\">Logout</a></div>\n" +
+                "</body></html>");
         out.close();
+
     }
 }
 
