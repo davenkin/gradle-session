@@ -14,16 +14,10 @@ import java.io.PrintWriter;
 /**
  * Created by yteng on 9/22/15.
  */
-public class HelloWorldServlet extends HttpServlet {
-    private static Logger logger = LoggerFactory.getLogger(HelloWorldServlet.class);
-
+public class AdminServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         PrintWriter out = res.getWriter();
-        HelloWorld helloWorld = new HelloWorld();
-        String user = req.getRemoteUser();
-        logger.info("Saying Hello from {}.",user);
-        helloWorld.setMessage(user);
-        out.println(helloWorld.helloworld());
+        out.println("This is the admin page,only admin can see this page.");
         out.close();
     }
 }

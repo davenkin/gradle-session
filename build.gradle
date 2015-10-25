@@ -1,15 +1,23 @@
 allprojects {
     apply plugin: 'idea'
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+    }
+
+    buildscript {
+        repositories {
+            mavenCentral()
+            mavenLocal()
+            jcenter()
+        }
+    }
 }
 
 subprojects {
     apply plugin: 'java'
-    repositories {
-        maven {
-            url "http://10.38.34.20:8081/nexus/content/groups/public/"
-        }
-        mavenCentral()
-    }
 
     configurations {
         all*.exclude module: 'commons-logging'
