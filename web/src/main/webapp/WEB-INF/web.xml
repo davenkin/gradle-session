@@ -52,16 +52,6 @@
         <url-pattern>/admin</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>logout</servlet-name>
-        <servlet-class>helloworld.servlet.LogoutServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>logout</servlet-name>
-        <url-pattern>/logout</url-pattern>
-    </servlet-mapping>
 
 
     <!--<deny-uncovered-http-methods/>-->

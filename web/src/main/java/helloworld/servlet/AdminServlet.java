@@ -20,7 +20,7 @@ public class AdminServlet extends HttpServlet {
         out.println("<!DOCTYPE html>\n" +
                 "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n" +
                 "<body>\n" +
-                "<div>This is the admin page,only admin can see this page.</div><div><a href=\"logout\">Logout</a></div>\n" +
+                "<div>This is the admin page,only admin can see this page.</div><div><a href=\"j_spring_security_logout\">Logout</a></div>\n" +
                 "</body></html>");
         out.close();
 
