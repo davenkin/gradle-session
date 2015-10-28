@@ -1,8 +1,5 @@
 package helloworld;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Created by yteng on 9/22/15.
  */
