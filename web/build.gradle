@@ -10,14 +10,12 @@ apply plugin: 'org.akhikhl.gretty'
 
 gretty {
     servletContainer = 'jetty9'
-    serverConfigFile = 'jetty/jetty.xml'
 }
 
 dependencies {
     compile project(':core')
     compile 'org.springframework:spring-webmvc:4.2.1.RELEASE'
-    compile 'org.springframework.security:spring-security-web:3.2.5.RELEASE'
-    compile 'org.springframework.security:spring-security-config:3.2.5.RELEASE'
-    compile 'org.springframework.security.oauth:spring-security-oauth2:1.0.0.RELEASE'
+    compile 'org.aspectj:aspectjweaver:1.7.4'
+    compile 'org.aspectj:aspectjrt:1.7.4'
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 }
