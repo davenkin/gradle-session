@@ -20,9 +20,18 @@ public class HelloWorldController {
     private HelloWorld helloWorld;
 
     @RequestMapping("/")
-    public void sayHello(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        PrintWriter out = res.getWriter();
-        out.println(helloWorld.sayHello());
+    public void sayHello(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        PrintWriter out = response.getWriter();
+        out.println(helloWorld.sayHello1());
+        out.println(helloWorld.sayHello2());
+        out.println(helloWorld.sayHello3());
+        out.println(helloWorld.sayHello4());
+        out.println(helloWorld.sayHello5());
+        out.println(helloWorld.sayHello6());
+        out.println(helloWorld.sayHello7());
+        out.println(helloWorld.sayHello8());
+        out.println(helloWorld.sayHello9());
+        out.println(helloWorld.sayHello10());
         out.close();
     }
 
